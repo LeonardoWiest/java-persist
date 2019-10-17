@@ -17,5 +17,9 @@ public final class JavaPersistConstants {
     public static final String JAVA_PERSIST_PERSISTENCE_UNIT_NAME = "javaPersistPersistenceUnit";
 
     public static final String JAVA_PERSIST_PERSISTENCE_CONTEXT = "dbJavaPersist";
+    
+    public static final String JAVA_PERSIST_JPA_TEMPLATE = "javaPersistJpaTemplate";
+    
+    public static final String JAVA_PERSIST_SQLQUERY_FACTORY = "javaPersistSqlQueryFactory";
 
 }
