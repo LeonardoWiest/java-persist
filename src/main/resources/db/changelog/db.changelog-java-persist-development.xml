@@ -3,4 +3,21 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
+	<include file="db.changelog-types.xml" relativeToChangelogFile="true" />
+
+	<changeSet author="Leonardo Wiest" id="2107172019" logicalFilePath="2107172019_create_tb_usuario.xml">
+		<createTable tableName="tb_usuario" remarks="Usuários">
+			<column name="id_usuario" remarks="Código sequencial" type="${numeric.18x0}">
+				<constraints nullable="false" />
+			</column>
+			<column name="tx_nome" remarks="Nome" type="${varchar.30}">
+				<constraints nullable="false" />
+			</column>
+			<column name="tx_login" remarks="Login" type="${varchar.30}">
+				<constraints />
+			</column>
+		</createTable>
+	</changeSet>
+
+
 </databaseChangeLog>

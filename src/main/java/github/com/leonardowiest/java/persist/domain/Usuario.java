@@ -9,14 +9,17 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "tb_cliente")
-public class Cliente {
+@Table(name = "tb_usuario")
+public class Usuario {
 
     @Id
-    @Column(name = "id_cliente")
+    @Column(name = "id_usuario")
     private Long id;
 
     @Column(name = "tx_nome")
     private String nome;
+
+    @Column(name = "tx_login")
+    private String login;
 
 }
